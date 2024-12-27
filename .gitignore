@@ -1,0 +1,9 @@
+### VS Code ###
+.vscode/
+.code-workspace
+
+### Mac OS ###
+.DS_Store
+.fseventsd
+.Trashes
+.Spotlight-V100
