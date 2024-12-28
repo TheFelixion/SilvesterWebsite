@@ -1,5 +1,7 @@
 :root{
     --defaultbackground: #333;
+    --lighterbackground: #444;
+    --lightlightbackground: #555;
 }
 
 * {
@@ -7,7 +9,29 @@
     padding: 0;
     background-color: var(--defaultbackground);
 }
+body {
+    background-color: var(--defaultbackground);
+    display: flex;
+}
 .countdown {
     color: blue;
+    text-align: center;
     font-size: xx-large;
+    font-family: sans-serif;
+    background-color: var(--lighterbackground);
+    padding: 20px;
+    position: sticky;
+}
+.days, .hours, .minutes, .seconds {
+    color: red;
+    font-size: 40px;
+    background-color: var(--lightlightbackground);
+    border-radius: 10px;
+    padding: 15px 20px 10px;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 10px;
+}
+.firework {
+
 }
