@@ -202,8 +202,12 @@ body {
   }
 }
 
-.sylvestercat {
+.sylvester {
   width: 5vw;
+  height: 8vw;
+}
+.randomexplosion {
+  width: 8vw;
   height: 8vw;
 }
 

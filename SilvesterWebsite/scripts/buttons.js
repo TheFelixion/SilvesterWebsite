@@ -1,4 +1,8 @@
 function playFireworkrocketSound(n) {
+    if (n = 7) {
+        alert("Bumm");
+        return;
+    }
     var audioPath= "./res/audios/fireworkrocket-" + n + ".mp3";
     var fireworkrocketSound = new Audio(audioPath);
     fireworkrocketSound.play();
