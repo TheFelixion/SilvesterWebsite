@@ -1,42 +1,25 @@
+@property --w {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 100vw;
+}
+@property --h {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 100vh;
+}
+
 :root{
-    --defaultbackground: #333;
-    --lighterbackground: #444;
-    --lightlightbackground: #555;
+  --defaultbackground: #333;
+  --lighterbackground: #444;
+  --lightlightbackground: #555;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    background-color: var(--defaultbackground);
+  margin: 0;
+  padding: 0;
+  background-color: var(--defaultbackground);
 }
-
-body {
-    background-color: var(--defaultbackground);
-    display: flex;
-}
-.countdown {
-    color: blue;
-    text-align: center;
-    font-size: xx-large;
-    font-family: sans-serif;
-    background-color: var(--lighterbackground);
-    padding: 20px;
-    position: sticky;
-}
-.days, .hours, .minutes, .seconds {
-    color: red;
-    font-size: 40px;
-    background-color: var(--lightlightbackground);
-    border-radius: 10px;
-    padding: 15px 20px 10px;
-    text-decoration: underline;
-    text-decoration-color: aquamarine;
-    text-decoration-thickness: 10px;
-}
-.firework {
-
-}
-
 ::-webkit-scrollbar {
     width: 1em;
     height: 0.5em;
@@ -55,3 +38,69 @@ body {
     background: linear-gradient(#A00, #00A);
     border-color: #ccc;
   }
+
+::selection {
+  background-color: blue;
+  color: white;
+}
+
+.countdown {
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-size: 5vw; 
+  font-family: sans-serif;
+  background-color: var(--lighterbackground);
+}
+.countdown-text {
+  background-color: var(--lighterbackground);
+  padding: 0 0.5vw 0 0.5vw;
+}
+.countdown-number {
+  color: red;
+  font-size: 5vw;
+  background-color: var(--lightlightbackground);
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+.firework-gif-container {
+  margin: 0.5vw 0;
+  padding: 1vw;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+.firework-gif {
+  width: auto;
+}
+
+.fireworkrocket-container {
+  
+}
+.fireworkrocket-rocket {
+  padding-top: 15vw;
+  padding-bottom: 0vw;
+  width: 5vw;
+  transition: 1000ms;
+}
+.fireworkrocket-rocket:hover {
+  padding-top: 0vw;
+  padding-bottom: 15vw;
+}
+@media only screen and (max-width: 1000px) {
+  .fireworkrocket-rocket{
+    height: 0;
+    padding: 0;
+  }
+  .fireworkrocket-container {
+    height: 0;
+  }
+}
+footer{
+  background-color: #888;
+  padding-left: 1vw;
+}
