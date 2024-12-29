@@ -208,9 +208,13 @@ body {
 footer{
   background-color: #aaa;
   padding-left: 1vw;
+  
 }
-
 .footer-link {
   text-decoration: none;
   color: blue;
+}
+.footer-separator {
+  color: black;
+  margin: 10px;
 }
