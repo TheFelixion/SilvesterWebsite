@@ -4,5 +4,5 @@ function playFireworkrocketSound() {
 }
 
 function fireworkHelp() {
-    alert("Hover over the rocket to fire it!");
+    alert("Gehe mit dem Mauszeiger über die Rakete links");
 }
