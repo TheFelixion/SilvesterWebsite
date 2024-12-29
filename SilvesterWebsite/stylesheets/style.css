@@ -98,6 +98,8 @@ body {
   width: 5vw;
   transition: 1000ms;
   background-color: transparent;
+  background-color: var(--lightlightbackground);
+  border-radius: 1vw;
 }
 .fireworkrocket-rocket:hover {
   padding-top: 0vw;
@@ -127,7 +129,7 @@ body {
   border-color: rgb(0, 0, 100);
   box-shadow: 0 0 30px 1vh rgba(0,0,255,0.8);
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .fireworkrocket-container {
     display: none;
   }
@@ -204,6 +206,11 @@ body {
 }
 
 footer{
-  background-color: #888;
+  background-color: #aaa;
   padding-left: 1vw;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: blue;
 }
