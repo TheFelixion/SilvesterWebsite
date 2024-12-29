@@ -1,4 +1,4 @@
-function playFireworkrocketSound() {
+function playFireworkrocketSound(n) {
     var audioPath= "../SilvesterWebsite/res/audios/fireworkrocket-" + n + " .mp3";
     var fireworkrocketSound = new Audio(audioPath);
     fireworkrocketSound.play();
