@@ -4,10 +4,10 @@ function playFireworkrocketSound(n) {
             alert("Bumm");
             break;
         case 8:
-            alert("Bumm");
+            alert("Bumm Bumm");
             break;
         case 9:
-            alert("Bumm");
+            alert("nochmal Bumm");
             break;
         default:
             var audioPath= "./res/audios/fireworkrocket-" + n + ".mp3";
